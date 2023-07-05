@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="9"
+    android:background="#e3f6f5"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/cashcalculater"
+        android:layout_width="378dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:text="cash calculater"
+        android:textStyle="normal"
+        android:background="@drawable/round_corner_pink"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/calculator"
+        android:layout_width="402dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/calculator" />
+
+    <TextView
+        android:id="@+id/calculation"
+        android:layout_width="392dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="1dp"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:maxLength="14"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculator" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="392dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:textAlignment="textEnd"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculation" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="177dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#B2E1F0"
+        android:onClick="clear"
+        android:text="C"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/delet"
+        android:layout_width="177dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#B2E1F0"
+        android:onClick="delet"
+        android:text="DEL"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/cancel"
+        app:layout_constraintTop_toBottomOf="@+id/result"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/num7"
+        android:layout_width="82dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#B2E1F0"
+        android:text="7"
+        android:onClick="num7"
+        android:textStyle="normal"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cancel"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/num8"
+        android:layout_width="82dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="#B2E1F0"
+        android:onClick="num8"
+        android:text="8"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/num7"
+        app:layout_constraintTop_toBottomOf="@+id/cancel"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/num9"
+        android:layout_width="82dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#B2E1F0"
+        android:onClick="num9"
+        android:text="9"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/num8"
+        app:layout_constraintTop_toBottomOf="@+id/delet"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/div"
+        android:layout_width="82dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#B2E1F0"
+        android:text="÷"
+        android:onClick="div"
+        android:textStyle="normal"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/num9"
+        app:layout_constraintTop_toBottomOf="@+id/delet"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/num4"
+        android:layout_width="82dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#B2E1F0"
+        android:text="4"
+        android:onClick="num4"
+        android:textStyle="normal"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num7"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/num5"
+        android:layout_width="82dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#B2E1F0"
+        android:text="5"
+        android:onClick="num5"
+        android:textStyle="normal"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/num4"
+        app:layout_constraintTop_toBottomOf="@+id/num8"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/num6"
+        android:layout_width="82dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#B2E1F0"
+        android:text="6"
+        android:onClick="num6"
+        android:textStyle="normal"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/num5"
+        app:layout_constraintTop_toBottomOf="@+id/num9"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/multi"
+        android:layout_width="82dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#B2E1F0"
+        android:text="x"
+        android:onClick="multi"
+        android:textStyle="normal"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/num6"
+        app:layout_constraintTop_toBottomOf="@+id/div"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/num1"
+        android:layout_width="82dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#B2E1F0"
+        android:textSize="30sp"
+        android:onClick="num1"
+        android:text="1"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num4"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/num2"
+        android:layout_width="82dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#B2E1F0"
+        android:textSize="30sp"
+        android:onClick="num2"
+        android:text="2"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/num1"
+        app:layout_constraintTop_toBottomOf="@+id/num5"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/num3"
+        android:layout_width="82dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#B2E1F0"
+        android:textSize="30sp"
+        android:onClick="num3"
+        android:text="3"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/num2"
+        app:layout_constraintTop_toBottomOf="@+id/num6"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="82dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#B2E1F0"
+        android:textSize="30sp"
+        android:onClick="sub"
+        android:text="-"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/num3"
+        app:layout_constraintTop_toBottomOf="@+id/multi"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/num0"
+        android:layout_width="82dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#B2E1F0"
+        android:textSize="30sp"
+        android:text="0"
+        android:onClick="num0"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num1"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/point"
+        android:layout_width="82dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#B2E1F0"
+        android:textSize="30sp"
+        android:onClick="dot"
+        android:text="."
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/num0"
+        app:layout_constraintTop_toBottomOf="@+id/num2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/equal"
+        android:layout_width="82dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#B2E1F0"
+        android:textSize="30sp"
+        android:onClick="equal"
+        android:text="="
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/point"
+        app:layout_constraintTop_toBottomOf="@+id/num3"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="82dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#B2E1F0"
+        android:textSize="30sp"
+        android:onClick="add"
+        android:text="+"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/equal"
+        app:layout_constraintTop_toBottomOf="@+id/sub"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

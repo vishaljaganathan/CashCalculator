@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/CashCalculater/app/src/main/res/drawable/round_corner.xml" value="0.2165" />
+        <entry key="..\:/CashCalculater/app/src/main/res/drawable/round_corner_pink.xml" value="0.207" />
+        <entry key="..\:/CashCalculater/app/src/main/res/layout/activity_cashpage.xml" value="0.1" />
+        <entry key="..\:/CashCalculater/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/CashCalculater/app/src/main/res/layout/activity_save.xml" value="0.20520833333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
